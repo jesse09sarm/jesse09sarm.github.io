@@ -1,28 +1,47 @@
+<!-- template found from the following website
+https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h
+
+javascript code used to make navbar, iconbar, footer used across multiple files
+found from the following website
+https://www.uvm.edu/~bnelson/computer/javascript/pageheadersandfooters.html -->
+
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Jesse Sarmiento</title>
-		<link rel="stylesheet" type="text/css" href="main.css">
-	</head>
-	<body>
-		<div class="body">
-			<p>HOWDY!<br></p>
-			<p>I am Jesse Sarmiento, a passionate programmer.<br>
-			   Computer Science Major at Texas A&M University</p>
-		</div>
-		<div>
-			<center>
-				<p id="text_1"><i>Currently expanding my knowledge in programming with multiple Python libraries such as Pygame, Django, scikit-learn.
-				<br>Looking to gain skills in machine learning for data analytics.
-				</i></p>
-			</center>
-		</div>
-		<div class="footer"></div>
-		<footer class="footer">
-			<a title="E-Mail" href="mailto:jesse09sarm@gmail.com"><img src="https://img.icons8.com/ios-filled/50/000000/gmail.png" id="gmail"></a>
-			<a title="Projects" href="https://github.com/jesse09sarm"><img src="https://img.icons8.com/ios-filled/50/000000/github.png"></a>
-			<a title="Linkedin"href="https://www.linkedin.com/in/jesus-sarmiento-7a7b44185/"><img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png"></a>
-		</footer>
-	</body>
+<title>Jesse Sarmiento</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="my_color">
+
+<script language="javascript" type="text/javascript" src="iconbar.txt"></script>
+
+<script language="javascript" type="text/javascript" src="navbar.txt"></script>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center my_color" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Jesse Sarmiento.</h1>
+    <h5>Passionate Programmer.</h5>
+  </header>
+
+  <!-- Footer -->
+  <script language="javascript" type="text/javascript" src="footer.txt"></script>
+  <!-- End footer -->
+</div>
+<!-- END PAGE CONTENT -->
+</body>
 </html>

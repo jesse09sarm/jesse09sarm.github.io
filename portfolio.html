@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>Jesse Sarmiento</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="my_color">
+
+<script language="javascript" type="text/javascript" src="iconbar.txt"></script>
+
+<script language="javascript" type="text/javascript" src="navbar.txt"></script>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="portfolio">
+    <h2>Portfolio</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <h4 class="w3-padding-16">NFL, NBA rankings</h4>
+    <p> &emsp;&emsp;This was an entertaining project I completed alone. The idea is sports teams can be ranked solely based on the level of competition they beat. Using the rankings, a prediction can be made if one team will beat another in the future. <br><br>&emsp;&emsp;I used the 
+      <a href="https://en.wikipedia.org/wiki/PageRank" target="_blank">PageRank</a> algorithm for this project where each node starts with the same value but divides that value equally among the nodes it points to. Thus, a highly ranked node is one that is pointed to from nodes that do not point to many nodes. Using this system, a team is a node that points to a team that it has lost to. With this logic, the best team would be the team with wins over teams with few losses. To gather data from thousands of games I used a python package called BeautifulSoup for web scraping. Implementing the algorithm consists of creating an nxn matrix for n teams representing the graph of nodes and edges pointing to other nodes. After a series of matrix multiplications, the values converge then the sum of a respective team column is that teams value. <br><br>&emsp;&emsp;Using the algorithm continuously with the NBA season was entertaining to see how big upsets can rearrange the rankings. I’ve also implemented this algorithm with a previous year’s NFL regular season to rank the teams then tested its accuracy predicting the winner for the playoffs. Out of the 13 games played in the playoffs, the team with the higher ranking won 11 games. <br><br>&emsp;&emsp;This is just one an example of the algorithm working but it is clear for an accurate prediction there would need to be more inputs such as player injuries and game location. Overall, this was a fun way to learn web scraping, a new algorithm, and get some experience cleaning, visualizing, and analyzing data.</p>
+    
+    <h4 class="w3-padding-16">Games with Pygame</h4> 
+    <p> &emsp;&emsp;I made some commonly known games using Python and one of its libraries called Pygame. 
+        These games include Minesweeper, Sudoku, 2048, and Tic-Tac-Toe. The purpose of these projects was 
+        to get some experience working with new libraries, visualizing a project, and using source control 
+        repositories. I was able to learn useful functionalities of Pygame by reading 
+        <a href="https://www.pygame.org/docs/" target="_blank">documentation</a> to complete these projects. 
+        Writing code that produced an interactive game window provided value in being able to see what each 
+        line of code does. Posting on Github gave me critical skills in how to use source control, important 
+        for future projects completed in a team. </p>
+    
+    <h4 class="w3-padding-16">Future Projects</h4> 
+    <p> &emsp;&emsp;There are still more projects I plan to complete and even more I have not even thought of yet. As of now, I have ideas to use techniques learned in my TAMU coursework to create models that can predict things like the price of stock. Further down the line in my career, I imagine I would be using technology not available today to build products that solve problems for myself and others.</p>
+  </div>
+  <!-- End Portfolio Section -->
+  
+  <!-- Footer -->
+  <script language="javascript" type="text/javascript" src="footer.txt"></script>
+  <!-- End footer -->
+</div>
+<!-- END PAGE CONTENT -->
+</body>
+</html>

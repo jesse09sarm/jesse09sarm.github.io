@@ -1,0 +1,7 @@
+/* class to make a lighter color for the background from the following website 
+https://www.w3schools.com/w3css/4/w3.css */
+
+.my_color,.my_color_hover:hover {
+    color:#fff!important;
+    background-color:#333!important
+}
